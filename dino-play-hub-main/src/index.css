@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 80 40% 97%;
+    --foreground: 150 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 30% 10%;
+
+    --primary: 145 65% 36%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 48 95% 55%;
+    --secondary-foreground: 150 30% 10%;
+
+    --muted: 80 20% 92%;
+    --muted-foreground: 150 10% 45%;
+
+    --accent: 48 95% 55%;
+    --accent-foreground: 150 30% 10%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 80 15% 85%;
+    --input: 80 15% 85%;
+    --ring: 145 65% 36%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 145 30% 15%;
+    --sidebar-foreground: 80 20% 92%;
+    --sidebar-primary: 48 95% 55%;
+    --sidebar-primary-foreground: 150 30% 10%;
+    --sidebar-accent: 145 40% 25%;
+    --sidebar-accent-foreground: 80 20% 92%;
+    --sidebar-border: 145 25% 25%;
+    --sidebar-ring: 48 95% 55%;
+
+    --dino-green: 145 65% 36%;
+    --dino-yellow: 48 95% 55%;
+    --dino-dark: 150 30% 10%;
+    --dino-light: 80 40% 97%;
+  }
+
+  .dark {
+    --background: 150 30% 7%;
+    --foreground: 80 20% 92%;
+
+    --card: 150 25% 12%;
+    --card-foreground: 80 20% 92%;
+
+    --popover: 150 25% 12%;
+    --popover-foreground: 80 20% 92%;
+
+    --primary: 145 65% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 48 90% 50%;
+    --secondary-foreground: 150 30% 10%;
+
+    --muted: 150 20% 18%;
+    --muted-foreground: 80 10% 55%;
+
+    --accent: 48 90% 50%;
+    --accent-foreground: 150 30% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 15% 22%;
+    --input: 150 15% 22%;
+    --ring: 145 65% 42%;
+
+    --sidebar-background: 150 30% 7%;
+    --sidebar-foreground: 80 20% 92%;
+    --sidebar-primary: 48 90% 50%;
+    --sidebar-primary-foreground: 150 30% 10%;
+    --sidebar-accent: 150 20% 15%;
+    --sidebar-accent-foreground: 80 20% 92%;
+    --sidebar-border: 150 15% 18%;
+    --sidebar-ring: 48 90% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Fredoka', sans-serif;
+  }
+  .font-body {
+    font-family: 'Nunito', sans-serif;
+  }
+}
